@@ -1,0 +1,175 @@
+/* CodeEditor.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  /* CodeEditor.css */
+  
+  /* Styling for the header section */
+  .code-editor-header {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Buttons justified between */
+    align-items: center;
+  }
+  
+  .header-title {
+    flex: 1;
+  }
+  
+  .header-title h2 {
+    margin: 0;
+    color: #fff;
+  }
+  
+  .header-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .header-button {
+    background: #3494e6;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .header-button:hover {
+    background: #ec6e53;
+  }
+  
+  
+  .code-editor-page {
+    display: flex;
+    flex: 1;
+  }
+  
+  .editor-container {
+    flex: 1;
+    background: linear-gradient(135deg, #3494e6, #ec6e53);
+    color: #fff;
+    overflow: auto;
+  }
+  .side-panel {
+    width: 300px; 
+    background: transparent;
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  /* Styling for input and output sections */
+  .input-section, .output-section {
+    flex: 1; /* Fill the available width */
+    background: transparent; 
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  
+  h4 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #333; 
+  }
+  
+  /* Styling for the textarea */
+  textarea {
+    width: 93%;
+    padding: 10px;
+    border-radius: 5px;
+    resize: vertical;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Styling for the button */
+  button {
+    background: #3A3A3A;
+    color: #fff;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold; 
+  }
+  
+  button:hover {
+    background: #5A5A5A; 
+  }
+  
+  /* Styling for the output content */
+  .output-content {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 100px;
+    background: #ffffff; 
+    color: #333; 
+  }
+
+
+  /* CodeEditor.css */
+/* Add this CSS for responsiveness */
+
+/* For small screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .code-editor-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-title {
+    margin-bottom: 10px;
+  }
+
+  .header-button {
+    margin: 5px;
+  }
+
+  .editor-container {
+    height: 70vh;
+  }
+
+  .side-panel {
+    height: 30vh;
+  }
+}
+
+/* For medium screens (e.g., tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .code-editor-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-title {
+    margin-bottom: 10px;
+  }
+
+  .header-button {
+    margin: 5px;
+  }
+
+  .editor-container {
+    height: 70vh;
+  }
+
+  .side-panel {
+    height: 30vh;
+  }
+}
+
+  
